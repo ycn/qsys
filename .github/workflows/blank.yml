@@ -25,4 +25,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: |
-        curl -X POST -d {} https://api.netlify.com/build_hooks/5eb6c34bc2f2d2de0f287162
+        echo Hello github actions!
+        
+    # curl -X POST -d {} https://api.netlify.com/build_hooks/5eb6c34bc2f2d2de0f287162
