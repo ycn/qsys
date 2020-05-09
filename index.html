@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./core/index.css" />
+    <title>QSys</title>
+  </head>
+  <body>
+    <div id="app">
+      <ol class="questions">
+        <li v-for="(q, index) in questions" :key="index">
+          <question v-bind:q="q" />
+        </li>
+      </ol>
+    </div>
+    <script src="./core/vue.js"></script>
+    <script src="./lib/q.js"></script>
+    <script src="./core/index.js"></script>
+  </body>
+</html>
